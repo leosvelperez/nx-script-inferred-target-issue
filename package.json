@@ -144,6 +144,7 @@
     "msw": "2.1.2",
     "node-html-parser": "^6.1.12",
     "npm-run-all": "^4.1.5",
+    "nx": "18.1.0-canary.20240227-452d845",
     "prettier": "^3.2.4",
     "prettier-plugin-sql": "^0.18.0",
     "prettier-plugin-tailwindcss": "^0.5.11",
@@ -159,5 +160,40 @@
   "epic-stack": true,
   "prisma": {
     "seed": "tsx prisma/seed.ts"
+  },
+  "nx": {
+    "targets": {
+      "build:icons": {
+        "outputs": [
+          "{projectRoot}/app/components/ui/icons"
+        ]
+      },
+      "build:remix": {
+        "outputs": [
+          "{projectRoot}/build"
+        ]
+      },
+      "build:server": {
+        "outputs": [
+          "{projectRoot}/server-build"
+        ]
+      },
+      "test": {
+        "outputs": [
+          "{projectRoot}/test-results"
+        ]
+      },
+      "test:e2e": {
+        "outputs": [
+          "{projectRoot}/playwright-report"
+        ]
+      },
+      "test:e2e:run": {
+        "outputs": [
+          "{projectRoot}/playwright-report"
+        ]
+      }
+    },
+    "includedScripts": []
   }
 }
