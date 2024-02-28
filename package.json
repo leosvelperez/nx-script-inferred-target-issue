@@ -193,7 +193,6 @@
           "{projectRoot}/playwright-report"
         ]
       }
-    },
-    "includedScripts": []
+    }
   }
 }
